@@ -28,11 +28,11 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                <div className="navbar navbar-dark bg-dark shadow-sm">
+                <div className="navbar navbar-dark bg-black shadow-sm">
                     <div className="container">
                         <a href="/" className="navbar-brand d-flex align-items-center">
                             <i className="bi bi-camera-reels"  style={{color: '#ffc107'}}/>
-                            <strong className='ms-3' style={{color: '#ffc107'}}>MyMovie.com </strong>
+                            <strong className='ms-3' style={{color: '#ffc107'}}>mymovie.com </strong>
                         </a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"

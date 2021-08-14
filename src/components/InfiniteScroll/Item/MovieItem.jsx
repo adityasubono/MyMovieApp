@@ -14,7 +14,15 @@ const MovieItem = ({ item, idx, elementRef, records, onImageClick, onBodyClick }
                     <img className="card-img-top img-poster poster" onClick={onImageClick(item)}
                          alt={'poster'}
                          src={item.Poster || Loading} data-testid="infinitescroll-img"/>
-                    <div className="card-body bg-warning" onClick={onBodyClick(item.imdbID)}>
+                    <div className="card-body"
+                         onClick={onBodyClick(item.imdbID)}
+                    style={{
+                        backgroundColor: '#313131',
+                        opacity: 0.5,
+                        color: '#e5bf16',
+                        position: 'relative',
+                    }}
+                    >
                         <h5 className="card-title text-truncate">{item.Title}</h5>
                         <span className="text-capitalize">{item.Type}</span> — {item.Year}
                     </div>

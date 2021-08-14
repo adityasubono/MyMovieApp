@@ -2,7 +2,7 @@ import React, { useCallback, useState } from 'react';
 
 import { useMovie } from '../../features/movie/hook';
 
-import DefaultPoster from '../../assets/default_poster.png'
+import Loading from '../../assets/loading.gif'
 
 const DetailMovie = ({ match }) => {
     const [activeTab, setActiveTab] = useState('details');
@@ -22,7 +22,7 @@ const DetailMovie = ({ match }) => {
              style={{backgroundColor: '#1f1f1f', color: 'white', fontWeight: 'bold', fontSize: '15'}}>
             <div className="col-md-2 p-3 ">
                 <div className="row justify-content-center">
-                    <img className="poster"  src={movie.Poster || DefaultPoster} alt="" data-testid="default-img"/>
+                    <img className="poster"  src={movie.Poster || Loading} alt="" data-testid="default-img"/>
                 </div>
             </div>
             <div className="col-md-8 p-3">

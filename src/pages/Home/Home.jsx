@@ -9,6 +9,7 @@ import Modal from '../../components/Modal/Modal';
 
 import '../../App.css';
 import Loading from '../../assets/loading.gif';
+import Video from '../../assets/Video2.mp4';
 
 
 const Apps = () => {
@@ -58,33 +59,47 @@ const Apps = () => {
     setPage(1);
   },[inputMovie, setPage, setSearchTerm])
 
+
   return (
     <div className="row">
-      <section className="py-5 text-center container" style={{backgroundColor: '#313131'}}>
-        <div className="row py-lg-5">
-          <div className="col-lg-6 col-md-8 mx-auto">
-            <h1 className="fw-light" style={{color: 'white'}}>Kami Hadir Untuk Anda</h1>
-            <p className="lead" style={{color: '#bcbcbc', fontSize: 20, fontFamily: 'monospace' }}>Kebosanan pasti ada ya... , Nah untuk menghilangan kebosaan apalagi anda
-              banyak disibukan bekerja dirumah selama pandemi COVIC-19 ini dan pasti jenuh sekali. Nah MyMovie.com hadir
-              untuk membunuh rasa bosan anda dan ditemani film favorit anda, yuk segara cari film kesayangan anda disini</p>
-            <div className="col-md-12 d-flex justify-content-center p-3">
-              <input
-                  value={inputMovie}
-                  name="input"
-                  type="text"
-                  className="form-control"
-                  placeholder="Yuk Cari Film Anda Disini..."
-                  style={{ maxWidth: '50%', borderWidth: 2, borderColor: 'grey', textAlign: 'center'}}
-                  onChange={onQueryChange}
-              />
-              <button
-                  type="button"
-                  className='btn btn-lg bg-warning ms-3'
-                  onClick={onButtonClick}>Search</button>
+      <section className="bg-dark py-5">
+        <div className="container px-5">
+          <div className="row gx-5 align-items-center justify-content-center">
+            <div className="col-lg-8 col-xl-7 col-xxl-6">
+              <div className="my-5 text-center text-xl-start">
+                <h1 className="display-2 fw-bolder text-warning mb-2">mymovie.com</h1>
+                <h1 className="display-5 fw-bolder text-white mb-2">Kami Hadir Untuk Anda</h1>
+                <p className="lead fw-normal text-white-50 mb-4">Kebosanan pasti ada ya... , Nah untuk menghilangan kebosanan apalagi anda
+                  banyak disibukan bekerja dirumah selama pandemi COVIC-19 ini dan pasti jenuh sekali. Nah MyMovie.com hadir
+                  untuk membunuh rasa bosan anda dan ditemani film favorit anda, yuk segara cari film kesayangan anda disini</p>
+                <div className="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                  <input
+                      value={inputMovie}
+                      name="input"
+                      type="text"
+                      className="form-control"
+                      placeholder="Yuk Cari Film Anda Disini..."
+                      style={{ maxWidth: '100%', borderWidth: 2, borderColor: 'grey', textAlign: 'center'}}
+                      onChange={onQueryChange}
+                  />
+                  <button
+                      type="button"
+                      className='btn btn-lg bg-warning ms-3'
+                      onClick={onButtonClick}>Search</button>
+                </div>
+              </div>
             </div>
+            <div className="col-xl-5 col-xxl-6 d-none d-xl-block text-center" >
+              <div className="ratio ratio-16x9" >
+                <video autoPlay="autoPlay" muted="muted" loop="loop">
+                  <source src={Video} type="video/mp4" />
+                </video>
+
+              </div></div>
           </div>
         </div>
       </section>
+
 
       <InfiniteScrolls hasMoreData={hasMoreData}
         isLoading={loading}
@@ -107,6 +122,6 @@ const Apps = () => {
     </div>
 
   )
-}
+};
 
 export default Apps;
