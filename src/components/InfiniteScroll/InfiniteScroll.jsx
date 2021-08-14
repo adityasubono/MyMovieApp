@@ -41,9 +41,10 @@ const InfiniteScroll = ({
 
     return (
         <>
-            <div className="row justify-content-center" data-testid="infinitescroll-test">
+            <div className="row justify-content-center bg-dark" data-testid="infinitescroll-test">
                 {listData.map((data, idx) => <MovieItem key={idx}
-                                                        item={data} idx={idx}
+                                                        item={data}
+                                                        idx={idx}
                                                         elementRef={lastBookElementRef} records={listData.length}
                                                         onImageClick={onImageClick} onBodyClick={onBodyClick}
                 />)}
