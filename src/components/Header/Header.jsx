@@ -3,33 +3,26 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div className="row" data-testid="header-1">
-          {/*<div className="col-2 col-md-2 d-flex justify-content-center align-items-center">*/}
-          {/*  <Link to="/" data-testid="header-2">*/}
-          {/*    <button className="btn btn-default">*/}
-          {/*      <i className="bi bi-house"></i>*/}
-          {/*      </button>*/}
-          {/*  </Link>*/}
-          {/*</div>*/}
-          {/*<div className="col-8 col-md-8 d-flex justify-content-center p-3">*/}
-          {/*  <h1>Pilih Movie Databases</h1>*/}
-          {/*</div>*/}
-
             <header>
-                <div className="collapse bg-dark" id="navbarHeader">
+                <div className="collapse bg-warning" id="navbarHeader">
                     <div className="container">
                         <div className="row">
                             <div className="col-sm-8 col-md-7 py-4">
-                                <h4 className="text-white">About</h4>
-                                <p className="text-muted">Hello, perkenalkan saya mymovie.com merupakan situs pencarian
-                                film yang membantu dalam mencari film favorit kesukaan anda.
+                                <h4 className="text-dark">About</h4>
+                                <p className="text-dark" style={{fontSize: 15, fontWeight: 'bold'}}>
+                                    Hello, perkenalkan saya MyMovie.com merupakan situs pencarian
+                                film yang membantu anda dalam mencari film favorit kesukaan anda dan anda
+                                    juga dapat melihat film anda disini.
                                 </p>
                             </div>
                             <div className="col-sm-4 offset-md-1 py-4">
-                                <h4 className="text-white">Contact</h4>
+                                <h4 className="text-dark text-dark">Follow Kami</h4>
                                 <ul className="list-unstyled">
-                                    <li><a href="#" className="text-white">Follow on Twitter</a></li>
-                                    <li><a href="#" className="text-white">Like on Facebook</a></li>
-                                    <li><a href="#" className="text-white">Email me</a></li>
+                                    <li>
+                                        <a href="#" className="text-white"> <i className="bi bi-twitter me-3"  style={{color: '#313131', fontSize: 50}}/></a>
+                                        <a href="#" className="text-white"> <i className="bi bi-facebook  me-3"  style={{color: '#313131', fontSize: 50}}/></a>
+                                        <a href="#" className="text-white"> <i className="bi bi-instagram  me-3"  style={{color: '#313131', fontSize: 50}}/></a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -37,7 +30,7 @@ const Header = () => {
                 </div>
                 <div className="navbar navbar-dark bg-dark shadow-sm">
                     <div className="container">
-                        <a href="#" className="navbar-brand d-flex align-items-center">
+                        <a href="/" className="navbar-brand d-flex align-items-center">
                             <i className="bi bi-camera-reels"  style={{color: '#ffc107'}}/>
                             <strong className='ms-3' style={{color: '#ffc107'}}>MyMovie.com </strong>
                         </a>

@@ -12,7 +12,7 @@ export const useMovies = () => {
     const [page, setPage] = useState(1);
     const [loading, setLoading] = useState(false);
     const [movies, setMovies] = useState([]);
-    
+
     useEffect(() => {
         /**
         * This function will fetch data from the API
@@ -20,11 +20,11 @@ export const useMovies = () => {
         */
         setLoading(true);
         const dispatcher = dispatch(getList({ searchTerm, page }));
-        
+
         dispatcher.then(() => {
             setLoading(false);
         });
-    
+
         return () => {
             dispatcher.abort();
             setLoading(false);
@@ -37,7 +37,7 @@ export const useMovies = () => {
 
     useEffect(() => {
         /**
-         * This function will create a new array with existing list data and 
+         * This function will create a new array with existing list data and
          * additional data from the API based on pagination and wil return array with unique item
          */
          if (!isSuccess) {
@@ -74,11 +74,11 @@ export const useMovie = (id) => {
         */
         setLoading(true);
         const dispatcher = dispatch(detailMovieById(id));
-        
+
         dispatcher.then(() => {
             setLoading(false);
         });
-    
+
         return () => {
             dispatcher.abort();
             setLoading(false);

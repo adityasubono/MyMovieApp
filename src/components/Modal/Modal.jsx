@@ -15,7 +15,7 @@ const Modal = ({ visible, toggle, content, title }) => visible ? (
         </div>
       </div>
     </div>
-    <div className="modal-overlay" onClick={toggle}></div>    
+    <div className="modal-overlay" onClick={toggle}/>
   </div>
 ) : null;
 

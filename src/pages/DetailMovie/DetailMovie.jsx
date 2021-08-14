@@ -18,7 +18,8 @@ const DetailMovie = ({ match }) => {
     }
 
     return (
-        <div className="row mt-5 justify-content-center h-100">
+        <div className="row justify-content-center h-100"
+             style={{backgroundColor: '#1f1f1f', color: 'white', fontWeight: 'bold', fontSize: '15'}}>
             <div className="col-md-2 p-3 ">
                 <div className="row justify-content-center">
                     <img className="poster"  src={movie.Poster || DefaultPoster} alt="" data-testid="default-img"/>
@@ -30,7 +31,7 @@ const DetailMovie = ({ match }) => {
                         <h2>{movie.Title}</h2>
                         <span>{movie.Year}</span>
                         <span style={{ marginLeft: '10px' }}>Directed by <b>{movie.Director}</b></span>
-                        <span className="badge bg-primary" style={{ marginLeft: '15px' }}>{movie.Rated}</span>
+                        <span className="badge bg-warning" style={{ marginLeft: '15px' }}>{movie.Rated}</span>
                     </div>
                 </div>
                 <div className="row">
@@ -40,20 +41,23 @@ const DetailMovie = ({ match }) => {
                         </div>
 
                         <ul className="nav nav-tabs mt-4" data-testid="nav-tabs">
-                            <li className="nav-item">
+                            <li className="nav-item bg-warning rounded-2">
                                 <button onClick={onChangeTab('details')}
+                                        style={{color: 'black'}}
                                     className={activeTab === 'details' ? "nav-link active" : "nav-link"}>
                                         Details
                                     </button>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item bg-warning rounded-2">
                                 <button onClick={onChangeTab('cast')}
+                                        style={{color: 'black'}}
                                     className={activeTab === 'cast' ? "nav-link active" : "nav-link"}>
                                         Cast
                                     </button>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item bg-warning rounded-2">
                                 <button onClick={onChangeTab('genre')}
+                                        style={{color: 'black'}}
                                     className={activeTab === 'genre' ? "nav-link active" : "nav-link"}>
                                         Genre
                                     </button>
@@ -78,7 +82,7 @@ const DetailMovie = ({ match }) => {
                     <div className="col-md-4 d-flex">
                         {movie.Ratings && movie.Ratings.map((item, i) => (<div className="m-3 mt-0" key={i}>
                             <div className="d-flex align-items-end rating-title"><p>{item.Source}</p></div>
-                            <span className="badge bg-primary">{item.Value}</span>
+                            <span className="badge bg-warning">{item.Value}</span>
                         </div>))}
                     </div>
                 </div>

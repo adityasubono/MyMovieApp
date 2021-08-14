@@ -76,6 +76,7 @@ describe('Detail Movie Component Test', () => {
       expect(result).toHaveAttribute('src', DefaultPoster)
     });
 
+    // eslint-disable-next-line jest/no-identical-title
     it('should render image poster with default image', () => {
       const wrapper = render(<DetailMovie {...routeComponentPropsMock}/>);
       const result = wrapper.getByTestId('nav-tabs')
