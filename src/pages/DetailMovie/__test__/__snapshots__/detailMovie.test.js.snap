@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Detail Movie Component Test should render detail movie component and match with snapshot 1`] = `
+Array [
+  <div
+    className="row mt-5 justify-content-center h-100"
+  >
+    <div
+      className="col-md-2 p-3 "
+    >
+      <div
+        className="row justify-content-center"
+      >
+        <img
+          alt=""
+          className="poster"
+          data-testid="default-img"
+          src="https://m.media-amazon.com/images/M/MV5BMTYwNjAyODIyMF5BMl5BanBnXkFtZTYwNDMwMDk2._V1_SX300.jpg"
+        />
+      </div>
+    </div>
+    <div
+      className="col-md-8 p-3"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-md-10"
+          style={
+            Object {
+              "paddingLeft": "20px",
+            }
+          }
+        >
+          <h2>
+            Batman
+          </h2>
+          <span>
+            1989
+          </span>
+          <span
+            style={
+              Object {
+                "marginLeft": "10px",
+              }
+            }
+          >
+            Directed by 
+            <b>
+              Tim Burton
+            </b>
+          </span>
+          <span
+            className="badge bg-primary"
+            style={
+              Object {
+                "marginLeft": "15px",
+              }
+            }
+          >
+            PG-13
+          </span>
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="col-md-8"
+        >
+          <div
+            className="pt-3 w-75"
+          >
+            <p
+              style={
+                Object {
+                  "paddingLeft": "10px",
+                }
+              }
+            >
+              Gotham City. Crime boss Carl Grissom (Jack Palance) effectively runs the town but there's a new crime fighter in town - Batman (Michael Keaton). Grissom's right-hand man is Jack Napier (Jack Nicholson), a brutal man who is not entirely sane... After falling out between the two Grissom has Napier set up with the Police and Napier falls to his apparent death in a vat of chemicals. However, he soon reappears as The Joker and starts a reign of terror in Gotham City. Meanwhile, reporter Vicki Vale (Kim Basinger) is in the city to do an article on Batman. She soon starts a relationship with Batman's everyday persona, billionaire Bruce Wayne.
+            </p>
+          </div>
+          <ul
+            className="nav nav-tabs mt-4"
+            data-testid="nav-tabs"
+          >
+            <li
+              className="nav-item"
+            >
+              <button
+                className="nav-link active"
+                onClick={[Function]}
+              >
+                Details
+              </button>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <button
+                className="nav-link"
+                onClick={[Function]}
+              >
+                Cast
+              </button>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <button
+                className="nav-link"
+                onClick={[Function]}
+              >
+                Genre
+              </button>
+            </li>
+          </ul>
+          <div
+            className="row p-4"
+          >
+            <div
+              className="col-md-12"
+            >
+              <b>
+                Languange: 
+              </b>
+              <p>
+                English, French, Spanish
+              </p>
+              <b>
+                Country: 
+              </b>
+              <p>
+                United States, United Kingdom
+              </p>
+              <b>
+                Awards: 
+              </b>
+              <p>
+                Won 1 Oscar. 9 wins & 26 nominations total
+              </p>
+              <b>
+                Production: 
+              </b>
+              <p>
+                Warner Brothers, PolyGram Filmed Entertainment, Guber-Peters Company
+              </p>
+              <b>
+                BoxOffice: 
+              </b>
+              <p>
+                $251,348,343
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-md-4 d-flex"
+        >
+          <div
+            className="m-3 mt-0"
+          >
+            <div
+              className="d-flex align-items-end rating-title"
+            >
+              <p>
+                Internet Movie Database
+              </p>
+            </div>
+            <span
+              className="badge bg-primary"
+            >
+              7.5/10
+            </span>
+          </div>
+          <div
+            className="m-3 mt-0"
+          >
+            <div
+              className="d-flex align-items-end rating-title"
+            >
+              <p>
+                Rotten Tomatoes
+              </p>
+            </div>
+            <span
+              className="badge bg-primary"
+            >
+              71%
+            </span>
+          </div>
+          <div
+            className="m-3 mt-0"
+          >
+            <div
+              className="d-flex align-items-end rating-title"
+            >
+              <p>
+                Metacritic
+              </p>
+            </div>
+            <span
+              className="badge bg-primary"
+            >
+              69/100
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

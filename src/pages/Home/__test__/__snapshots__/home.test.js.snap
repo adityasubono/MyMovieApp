@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component Test should render home component and match with snapshot 1`] = `
+Array [
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-12 d-flex justify-content-center p-3"
+    >
+      <input
+        className="form-control"
+        onChange={[Function]}
+        placeholder="Input movie title here..."
+        style={
+          Object {
+            "maxWidth": "50%",
+          }
+        }
+        type="text"
+      />
+    </div>
+    <InfiniteScroll
+      hasMoreData={false}
+      listData={
+        Object {
+          "Response": "True",
+          "Search": Array [
+            Object {
+              "Poster": "https://m.media-amazon.com/images/M/MV5BMTc0MTcxMzQ0Ml5BMl5BanBnXkFtZTgwNDc3MzE0MTE@._V1_SX300.jpg",
+              "Title": "Batman: Arkham Knight",
+              "Type": "game",
+              "Year": "2015",
+              "imdbID": "tt3554580",
+            },
+            Object {
+              "Poster": "https://m.media-amazon.com/images/M/MV5BMDBiODMwZmYtYWFiZC00N2I2LWJiMDktMGYwM2QxNzUxMzc3XkEyXkFqcGdeQXVyMTEyNzgwMDUw._V1_SX300.jpg",
+              "Title": "Batman: The Brave and the Bold",
+              "Type": "series",
+              "Year": "2008–2011",
+              "imdbID": "tt1213218",
+            },
+            Object {
+              "Poster": "https://m.media-amazon.com/images/M/MV5BMTkzMDI0MTIyNF5BMl5BanBnXkFtZTYwMTUxMTY3._V1_SX300.jpg",
+              "Title": "Batman: Dead End",
+              "Type": "movie",
+              "Year": "2003",
+              "imdbID": "tt0374526",
+            },
+            Object {
+              "Poster": "https://m.media-amazon.com/images/M/MV5BNTJjNmViYjEtNGRjZS00MDk3LThmZjktNzhkZDg1YjBiNjA0XkEyXkFqcGdeQXVyNjYyODY4NDU@._V1_SX300.jpg",
+              "Title": "Batman Beyond: The Movie",
+              "Type": "movie",
+              "Year": "1999",
+              "imdbID": "tt0231237",
+            },
+            Object {
+              "Poster": "https://m.media-amazon.com/images/M/MV5BOTdlNjNhOGEtZTk2Yy00MjI5LTllOTMtODczMWFmNmNhZmVlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
+              "Title": "Batman: Return of the Caped Crusaders",
+              "Type": "movie",
+              "Year": "2016",
+              "imdbID": "tt5973626",
+            },
+            Object {
+              "Poster": "https://m.media-amazon.com/images/M/MV5BNjRjOGU2NzUtMjAwOC00MDI3LThmNmUtNTVkZTQ0MDEyYTc1XkEyXkFqcGdeQXVyMTA5NzUzODM4._V1_SX300.jpg",
+              "Title": "Lego Batman: The Movie - DC Super Heroes Unite",
+              "Type": "movie",
+              "Year": "2013",
+              "imdbID": "tt2465238",
+            },
+            Object {
+              "Poster": "https://m.media-amazon.com/images/M/MV5BY2IzMGUzN2UtZDI4NS00NWM3LTgyNTYtYWJiNTg5OGNjNWQ0XkEyXkFqcGdeQXVyMTEyNzgwMDUw._V1_SX300.jpg",
+              "Title": "Beware the Batman",
+              "Type": "series",
+              "Year": "2013–2014",
+              "imdbID": "tt2329077",
+            },
+            Object {
+              "Poster": "https://m.media-amazon.com/images/M/MV5BYTUxNDQ3OGMtNWM2Yy00MDEwLThkMmUtZGVmZWM5MTczNjExXkEyXkFqcGdeQXVyMTEyNzgwMDUw._V1_SX300.jpg",
+              "Title": "Batman: Soul of the Dragon",
+              "Type": "movie",
+              "Year": "2021",
+              "imdbID": "tt12885852",
+            },
+            Object {
+              "Poster": "https://m.media-amazon.com/images/M/MV5BY2MyY2NjNzgtZDAxNi00OWM2LTg3MDUtOTcyOGU1OTdjODNjXkEyXkFqcGdeQXVyMTg2NjYzOA@@._V1_SX300.jpg",
+              "Title": "Batman vs. Two-Face",
+              "Type": "movie",
+              "Year": "2017",
+              "imdbID": "tt6142314",
+            },
+            Object {
+              "Poster": "https://m.media-amazon.com/images/M/MV5BMDQ0YTU2ZjgtZmZiZC00YWM2LTljYWYtOWI2NzUzZmIwMzg4XkEyXkFqcGdeQXVyNDQ2MTMzODA@._V1_SX300.jpg",
+              "Title": "Batman: The Telltale Series",
+              "Type": "game",
+              "Year": "2016",
+              "imdbID": "tt5785964",
+            },
+          ],
+          "totalResults": "444",
+        }
+      }
+      onBodyClick={[Function]}
+      onImageClick={[Function]}
+    />
+  </div>,
+]
+`;
